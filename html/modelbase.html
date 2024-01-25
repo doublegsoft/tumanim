@@ -1,0 +1,378 @@
+<html>
+  <body style="margin: 0px; display: flex; overflow: hidden;">
+    <canvas style="margin: auto;"></canvas>
+  </body>
+</html>
+
+<script>
+
+DIAGRAM_LANE_COUNT = 4;
+
+async function loadImage(url) {
+  return new Promise((resolve, reject) => {
+    var img = new Image();
+    img.onload = function () {
+      resolve(img);
+    };
+    img.onerror = function () {
+      reject(new Error('Failed to load image'));
+    };
+    img.src = url;
+  });
+}
+
+CanvasRenderingContext2D.prototype.dashedLine = function(x, y, x2, y2, dashArray, start) {
+  if (!dashArray) dashArray = [10, 5];
+  var dashCount = dashArray.length;
+  var dashSize = 0;
+  for (i = 0; i < dashCount; i++) dashSize += parseInt(dashArray[i]);
+  var dx = (x2 - x),
+      dy = (y2 - y);
+  var slopex = (dy < dx);
+  var slope = (slopex) ? dy / dx : dx / dy;
+  var dashOffSet = dashSize * (1 - (start / 100))
+  if (slopex) {
+    var xOffsetStep = Math.sqrt(dashOffSet * dashOffSet / (1 + slope * slope));
+    x -= xOffsetStep;
+    dx += xOffsetStep;
+    y -= slope * xOffsetStep;
+    dy += slope * xOffsetStep;
+  } else {
+    var yOffsetStep = Math.sqrt(dashOffSet * dashOffSet / (1 + slope * slope));
+    y -= yOffsetStep;
+    dy += yOffsetStep;
+    x -= slope * yOffsetStep;
+    dx += slope * yOffsetStep;
+  }
+  this.moveTo(x, y);
+  var distRemaining = Math.sqrt(dx * dx + dy * dy);
+  var dashIndex = 0,
+      draw = true;
+  while (distRemaining >= 0.1 && dashIndex < 10000) {
+    var dashLength = dashArray[dashIndex++ % dashCount];
+    if (dashLength > distRemaining) dashLength = distRemaining;
+    if (slopex) {
+      var xStep = Math.sqrt(dashLength * dashLength / (1 + slope * slope));
+      x += xStep
+      y += slope * xStep;
+    } else {
+      var yStep = Math.sqrt(dashLength * dashLength / (1 + slope * slope));
+      y += yStep
+      x += slope * yStep;
+    }
+    if (dashOffSet > 0) {
+      dashOffSet -= dashLength;
+      this.moveTo(x, y);
+    } else {
+      this[draw ? 'lineTo' : 'moveTo'](x, y);
+    }
+    distRemaining -= dashLength;
+    draw = !draw;
+  }
+  // Ensure that the last segment is closed for proper stroking
+  this.moveTo(0, 0);
+}
+
+function ModelbaseDiagram() {
+  let ratio = 16 / 9;
+  let width = window.innerWidth;
+  let height = width / ratio;
+  
+  this.canvas = document.getElementsByTagName('canvas')[0];
+  this.canvas.style.width = width + 'px';
+  this.canvas.style.height = height + 'px';
+  
+  this.context = this.canvas.getContext('2d');
+  var dpr = window.devicePixelRatio || 1;
+  
+  this.canvas.width = width * dpr;
+  this.canvas.height = height * dpr;
+  this.context.scale(dpr, dpr);
+  
+  this.width = width;
+  this.height = height;
+  
+}
+
+ModelbaseDiagram.prototype.initialize = async function() {
+  this.imageManager = await loadImage('/img/manager.png');
+  this.imageStudio = await loadImage('/img/studio.png');
+  this.imageGit = await loadImage('/img/git.png');
+  this.imageMaven = await loadImage('/img/maven.png');
+  
+  this.imageDeveloper1 = await loadImage('/img/developer1.png');
+  this.imageDeveloper2 = await loadImage('/img/developer2.png');
+  this.imageDeveloper3 = await loadImage('/img/developer3.png');
+  
+  this.imageGroovy = await loadImage('/img/groovy.png');
+  this.imageJar = await loadImage('/img/jar.png');
+  
+  let height = this.getImageHeight();
+  this.widthManager = height;
+  this.widthStudio = height * (this.imageStudio.width / this.imageStudio.height);
+  this.widthGit = height * (this.imageGit.width / this.imageGit.height);
+  this.widthMaven = height * (this.imageMaven.width / this.imageMaven.height);
+  
+  this.widthDeveloper1 = height * (this.imageDeveloper1.width / this.imageDeveloper1.height);
+  this.widthDeveloper2 = height * (this.imageDeveloper2.width / this.imageDeveloper2.height);
+  this.widthDeveloper3 = height * (this.imageDeveloper3.width / this.imageDeveloper3.height);
+  
+  let totalContentWidth = this.widthManager + this.widthStudio + this.widthGit + this.widthMaven;
+  
+  this.averageMargin = (this.width - totalContentWidth) / (DIAGRAM_LANE_COUNT * 2);
+  
+  this.xDeveloper = this.width - this.widthManager - this.widthStudio - this.averageMargin * 5;
+  
+  this.marginDeveloper = (this.width - this.xDeveloper - this.averageMargin * 3) / 3;
+};
+
+ModelbaseDiagram.prototype.getImageHeight = function() {
+  return this.height / 7;
+};
+
+ModelbaseDiagram.prototype.getTopMargin = function() {
+  return this.height / 4;
+};
+
+ModelbaseDiagram.prototype.renderBackground = function() {
+  this.context.fillStyle = "#222";
+  this.context.fillRect(0, 0, this.width, this.height);
+};
+
+ModelbaseDiagram.prototype.renderManager = function() {
+  let height = this.getImageHeight();
+  
+  let startX = this.averageMargin;
+  let startY = this.getTopMargin();
+  
+  this.context.drawImage(this.imageManager, startX, startY, this.widthManager, height);
+};
+
+ModelbaseDiagram.prototype.renderStudio = function() {
+  let height = this.getImageHeight();
+  
+  let startX = this.averageMargin * 3 + this.widthManager;
+  let startY = this.getTopMargin();
+  
+  this.context.drawImage(this.imageStudio, startX, startY, this.widthStudio, height);
+};
+
+ModelbaseDiagram.prototype.renderGit = function() {
+  let height = this.getImageHeight();
+  
+  let startX = this.averageMargin * 5 + this.widthManager + this.widthStudio;
+  let startY = this.getTopMargin();
+  
+  this.context.drawImage(this.imageGit, startX, startY, this.widthGit, height);
+};
+
+ModelbaseDiagram.prototype.renderMaven = function() {
+  let height = this.getImageHeight();
+  let width = height * (this.imageStudio.width / this.imageStudio.height);
+  
+  let startX = this.averageMargin * 7 + this.widthManager + this.widthStudio + this.widthGit;
+  let startY = this.getTopMargin();
+  
+  this.context.drawImage(this.imageMaven, startX, startY, this.widthMaven, height);
+};
+
+ModelbaseDiagram.prototype.renderDevelopers = function() {
+  let height = this.getImageHeight();
+  let width = height * (this.imageStudio.width / this.imageStudio.height);
+  
+  let startX = this.xDeveloper;
+  let startY = this.height - this.getTopMargin() - height;
+  
+  this.context.drawImage(this.imageDeveloper1, startX, startY, this.widthDeveloper1, height);
+  this.context.drawImage(this.imageDeveloper2, startX + this.marginDeveloper + this.widthDeveloper1, startY, this.widthDeveloper2, height);
+  this.context.drawImage(this.imageDeveloper3, startX + this.marginDeveloper * 2 + this.widthDeveloper1 + this.widthDeveloper2, startY, this.widthDeveloper3, height);
+};
+
+ModelbaseDiagram.prototype.renderDevelopers = function() {
+  let height = this.getImageHeight();
+  let width = height * (this.imageStudio.width / this.imageStudio.height);
+  
+  let startX = this.xDeveloper;
+  let startY = this.height - this.getTopMargin() - height;
+  
+  this.context.drawImage(this.imageDeveloper1, startX, startY, this.widthDeveloper1, height);
+  this.context.drawImage(this.imageDeveloper2, startX + this.marginDeveloper + this.widthDeveloper1, startY, this.widthDeveloper2, height);
+  this.context.drawImage(this.imageDeveloper3, startX + this.marginDeveloper * 2 + this.widthDeveloper1 + this.widthDeveloper2, startY, this.widthDeveloper3, height);
+};
+
+ModelbaseDiagram.prototype.renderManager2Studio = function () {
+  if (!this.offsetManager2Studio) {
+    this.offsetManager2Studio = 0;
+  } 
+  if (this.offsetManager2Studio >= this.averageMargin * 2) {
+    this.offsetManager2Studio = 0;
+  }
+  let startX = this.averageMargin + this.widthManager;
+  let startY = this.getTopMargin() + this.getImageHeight() / 2;
+  
+  this.context.lineWidth = 3;
+  this.context.strokeStyle = '#ddd';
+  this.context.setLineDash([5, 10]);
+  this.context.lineDashOffset = -this.offsetManager2Studio;
+  this.context.moveTo(startX, startY);
+  this.context.lineTo(startX + this.averageMargin * 2, startY);
+  this.context.stroke();
+  
+  this.offsetManager2Studio += 5;
+};
+
+ModelbaseDiagram.prototype.renderStudio2Git = function () {
+  if (!this.offsetStudio2Git) {
+    this.offsetStudio2Git = 0;
+  } 
+
+  let startX = this.averageMargin * 3 + this.widthManager + this.widthStudio;
+  let startY = this.getTopMargin() + this.getImageHeight() / 2;
+  let endX = startX + this.averageMargin * 2;
+  
+  if (this.offsetStudio2Git >= this.averageMargin * 2) {
+    this.offsetStudio2Git = 0;
+  }
+  
+  this.context.lineWidth = 3;
+  this.context.strokeStyle = '#ddd';
+  this.context.setLineDash([5, 10]);
+  this.context.lineDashOffset = -this.offsetStudio2Git;
+  this.context.moveTo(startX, startY);
+  this.context.lineTo(startX + this.averageMargin * 2, startY);
+  this.context.stroke();
+  
+  this.context.drawImage(this.imageGroovy, startX + this.offsetStudio2Git, startY + 8, 22, 22);
+  
+  this.offsetStudio2Git += 5;
+};
+
+ModelbaseDiagram.prototype.renderStudio2Maven = function () {
+  const SPEED = 5;
+  if (!this.offsetStudio2Maven) {
+    this.offsetStudio2Maven = 0;
+  } 
+
+  let startX = this.averageMargin * 3 + this.widthManager + this.widthStudio;
+  let startY = this.getTopMargin() + this.getImageHeight() / 2;
+  let endX = startX + this.averageMargin * 2;
+  
+  let p1X = startX - this.widthStudio / 2;
+  let p1Y = this.getTopMargin();
+  
+  let p2X = startX - this.widthStudio / 2;
+  let p2Y = this.getTopMargin() / 2;
+  
+  let p3X = this.width - this.widthMaven / 2 - this.averageMargin;
+  let p3Y = this.getTopMargin() / 2;
+  
+  let p4X = this.width - this.widthMaven / 2 - this.averageMargin;
+  let p4Y = this.getTopMargin();
+
+  
+  if (this.offsetStudio2Maven >= this.averageMargin * 2) {
+    this.offsetStudio2Maven = 0;
+  }
+  
+  this.context.lineWidth = 3;
+  this.context.strokeStyle = '#ddd';
+  this.context.setLineDash([5, 10]);
+  this.context.lineDashOffset = -this.offsetStudio2Maven;
+//  this.context.moveTo(startX, startY);
+//  this.context.lineTo(startX + this.averageMargin * 2, startY);
+//  this.context.stroke();
+  
+  this.context.moveTo(p1X, p1Y);
+  this.context.lineTo(p2X, p2Y);
+  this.context.lineTo(p3X, p3Y);
+  this.context.lineTo(p4X, p4Y);
+  this.context.stroke();
+  
+  if (!this.imageJarX) {
+    this.imageJarX = p1X - 22 - 8;
+    this.imageJarY = p1Y;
+  }
+  // 向右移动
+  if (this.imageJarY < (p2Y - 22)) {
+    this.imageJarX += SPEED;
+  } 
+  // 向下移动
+  if (this.imageJarX > (p3X)) {
+    this.imageJarY += SPEED;
+  } 
+  // 向上移动
+  if (this.imageJarX == p1X - 22 - 8) {
+    this.imageJarY -= SPEED;
+  }
+  // 恢复原有位置
+  if (this.imageJarY > p4Y && this.imageJarX > p4X) {
+    this.imageJarX = p1X - 22 - 8;
+    this.imageJarY = p1Y;
+  }
+  this.context.drawImage(this.imageJar, this.imageJarX, this.imageJarY, 22, 22);
+
+  this.offsetStudio2Maven += 5;
+};
+
+ModelbaseDiagram.prototype.render = async function() {
+  await this.initialize();
+  this.renderBackground();
+  this.renderManager();
+  this.renderStudio();
+  this.renderGit();
+  this.renderMaven();
+  this.renderDevelopers();
+  
+  this.renderManager2Studio();
+  this.renderStudio2Git();
+  this.renderStudio2Maven();
+};
+
+diagram = new ModelbaseDiagram();
+
+function render() {
+  requestAnimationFrame(render);
+  // calc elapsed time since last loop
+  now = Date.now();
+  elapsed = now - then;
+  if (elapsed > fpsInterval) {
+    // Get ready for next frame by setting then=now, but also adjust for your
+    // specified fpsInterval not being a multiple of RAF's interval (16.7ms)
+    then = now - (elapsed % fpsInterval);
+    // Put your drawing code here
+    diagram.render();
+  }
+}
+
+//setInterval(() => {
+//  diagram.render();
+//}, 240);
+
+//var stop = false;
+//var frameCount = 0;
+var fps = 30, fpsInterval, startTime, now, then, elapsed;
+//
+//fpsInterval = 1000 / fps;
+//then = Date.now();
+//startTime = then;
+//
+//requestAnimationFrame(render);
+
+(async function renderLoop() {
+  let then = performance.now();
+  const interval = 1000 / 30;
+  let delta = 0;
+  while (true) {
+    let now = await new Promise(requestAnimationFrame);
+    if (now - then < interval - delta) {
+        continue;
+    }
+    delta = Math.min(interval, delta + now - then - interval);
+    then = now;
+
+    diagram.render();
+  }
+})();
+
+
+</script>
