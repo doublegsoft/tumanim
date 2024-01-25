@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c" "CMakeFiles/tumanim.dir/src/tumanim-image.c.o" "gcc" "CMakeFiles/tumanim.dir/src/tumanim-image.c.o.d"
-  "/Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim.c" "CMakeFiles/tumanim.dir/src/tumanim.c.o" "gcc" "CMakeFiles/tumanim.dir/src/tumanim.c.o.d"
+  "/Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/diagram/modelbase.c" "CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o" "gcc" "CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o.d"
+  "/Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c" "CMakeFiles/tumanim.dir/src/tumanim-image.c.o" "gcc" "CMakeFiles/tumanim.dir/src/tumanim-image.c.o.d"
+  "/Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim.c" "CMakeFiles/tumanim.dir/src/tumanim.c.o" "gcc" "CMakeFiles/tumanim.dir/src/tumanim.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

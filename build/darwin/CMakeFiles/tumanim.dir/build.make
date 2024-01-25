@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim
+CMAKE_SOURCE_DIR = /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin
+CMAKE_BINARY_DIR = /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tumanim.dir/depend.make
@@ -70,46 +70,62 @@ include CMakeFiles/tumanim.dir/progress.make
 include CMakeFiles/tumanim.dir/flags.make
 
 CMakeFiles/tumanim.dir/src/tumanim.c.o: CMakeFiles/tumanim.dir/flags.make
-CMakeFiles/tumanim.dir/src/tumanim.c.o: /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim.c
+CMakeFiles/tumanim.dir/src/tumanim.c.o: /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim.c
 CMakeFiles/tumanim.dir/src/tumanim.c.o: CMakeFiles/tumanim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tumanim.dir/src/tumanim.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tumanim.dir/src/tumanim.c.o -MF CMakeFiles/tumanim.dir/src/tumanim.c.o.d -o CMakeFiles/tumanim.dir/src/tumanim.c.o -c /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tumanim.dir/src/tumanim.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tumanim.dir/src/tumanim.c.o -MF CMakeFiles/tumanim.dir/src/tumanim.c.o.d -o CMakeFiles/tumanim.dir/src/tumanim.c.o -c /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim.c
 
 CMakeFiles/tumanim.dir/src/tumanim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tumanim.dir/src/tumanim.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim.c > CMakeFiles/tumanim.dir/src/tumanim.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim.c > CMakeFiles/tumanim.dir/src/tumanim.c.i
 
 CMakeFiles/tumanim.dir/src/tumanim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tumanim.dir/src/tumanim.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim.c -o CMakeFiles/tumanim.dir/src/tumanim.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim.c -o CMakeFiles/tumanim.dir/src/tumanim.c.s
 
 CMakeFiles/tumanim.dir/src/tumanim-image.c.o: CMakeFiles/tumanim.dir/flags.make
-CMakeFiles/tumanim.dir/src/tumanim-image.c.o: /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c
+CMakeFiles/tumanim.dir/src/tumanim-image.c.o: /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c
 CMakeFiles/tumanim.dir/src/tumanim-image.c.o: CMakeFiles/tumanim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tumanim.dir/src/tumanim-image.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tumanim.dir/src/tumanim-image.c.o -MF CMakeFiles/tumanim.dir/src/tumanim-image.c.o.d -o CMakeFiles/tumanim.dir/src/tumanim-image.c.o -c /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tumanim.dir/src/tumanim-image.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tumanim.dir/src/tumanim-image.c.o -MF CMakeFiles/tumanim.dir/src/tumanim-image.c.o.d -o CMakeFiles/tumanim.dir/src/tumanim-image.c.o -c /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c
 
 CMakeFiles/tumanim.dir/src/tumanim-image.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tumanim.dir/src/tumanim-image.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c > CMakeFiles/tumanim.dir/src/tumanim-image.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c > CMakeFiles/tumanim.dir/src/tumanim-image.c.i
 
 CMakeFiles/tumanim.dir/src/tumanim-image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tumanim.dir/src/tumanim-image.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c -o CMakeFiles/tumanim.dir/src/tumanim-image.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c -o CMakeFiles/tumanim.dir/src/tumanim-image.c.s
+
+CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o: CMakeFiles/tumanim.dir/flags.make
+CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o: /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/diagram/modelbase.c
+CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o: CMakeFiles/tumanim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o -MF CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o.d -o CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o -c /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/diagram/modelbase.c
+
+CMakeFiles/tumanim.dir/src/diagram/modelbase.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tumanim.dir/src/diagram/modelbase.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/diagram/modelbase.c > CMakeFiles/tumanim.dir/src/diagram/modelbase.c.i
+
+CMakeFiles/tumanim.dir/src/diagram/modelbase.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tumanim.dir/src/diagram/modelbase.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/diagram/modelbase.c -o CMakeFiles/tumanim.dir/src/diagram/modelbase.c.s
 
 # Object files for target tumanim
 tumanim_OBJECTS = \
 "CMakeFiles/tumanim.dir/src/tumanim.c.o" \
-"CMakeFiles/tumanim.dir/src/tumanim-image.c.o"
+"CMakeFiles/tumanim.dir/src/tumanim-image.c.o" \
+"CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o"
 
 # External object files for target tumanim
 tumanim_EXTERNAL_OBJECTS =
 
 tumanim: CMakeFiles/tumanim.dir/src/tumanim.c.o
 tumanim: CMakeFiles/tumanim.dir/src/tumanim-image.c.o
+tumanim: CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o
 tumanim: CMakeFiles/tumanim.dir/build.make
 tumanim: CMakeFiles/tumanim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable tumanim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable tumanim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tumanim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +137,6 @@ CMakeFiles/tumanim.dir/clean:
 .PHONY : CMakeFiles/tumanim.dir/clean
 
 CMakeFiles/tumanim.dir/depend:
-	cd /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles/tumanim.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles/tumanim.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/tumanim.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim
+# Install script for directory: /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

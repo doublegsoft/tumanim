@@ -1,18 +1,18 @@
 CMakeFiles/tumanim.dir/src/tumanim-image.c.o: \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_main.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_stdinc.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include-config-/SDL2/SDL_config.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_platform.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.c \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_main.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_stdinc.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include-config-/SDL2/SDL_config.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/AvailabilityMacros.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/AvailabilityInternalLegacy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/TargetConditionals.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/begin_code.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/close_code.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/begin_code.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/close_code.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/immintrin.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/sys/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/sys/appleapiopts.h \
@@ -147,16 +147,16 @@ CMakeFiles/tumanim.dir/src/tumanim-image.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/float.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_assert.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_atomic.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_audio.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_error.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_endian.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_mutex.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_thread.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_rwops.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_clipboard.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_cpuinfo.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_assert.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_atomic.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_audio.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_error.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_endian.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_mutex.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_thread.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_rwops.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_clipboard.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_cpuinfo.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/x86gprintrin.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/hresetintrin.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/uintrintrin.h \
@@ -238,38 +238,38 @@ CMakeFiles/tumanim.dir/src/tumanim-image.c.o: \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/enqcmdintrin.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/serializeintrin.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/tsxldtrkintrin.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_events.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_video.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_pixels.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_rect.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_surface.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_blendmode.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_keyboard.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_keycode.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_scancode.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_mouse.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_joystick.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_guid.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_gamecontroller.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_sensor.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_quit.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_gesture.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_touch.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_filesystem.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_haptic.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_hidapi.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_hints.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_loadso.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_log.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_messagebox.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_metal.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_power.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_render.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_shape.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_system.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_timer.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_version.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_locale.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_misc.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL_image-2.8.2/include/SDL_image.h \
-  /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.h
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_events.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_video.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_pixels.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_rect.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_surface.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_blendmode.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_keyboard.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_keycode.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_scancode.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_mouse.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_joystick.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_guid.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_gamecontroller.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_sensor.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_quit.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_gesture.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_touch.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_filesystem.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_haptic.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_hidapi.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_hints.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_loadso.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_log.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_messagebox.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_metal.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_power.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_render.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_shape.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_system.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_timer.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_version.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_locale.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL-2.28.5/build/darwin/include/SDL2/SDL_misc.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/../SDL_image-2.8.2/include/SDL_image.h \
+  /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/src/tumanim-image.h

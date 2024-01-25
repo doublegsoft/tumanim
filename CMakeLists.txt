@@ -19,6 +19,7 @@ set(SDL           "../SDL-2.28.5")
 set(SDL_IMAGE     "../SDL_image-2.8.2")
 
 include_directories(
+  "src"
   "${SDL}/${BUILD}/include"
   "${SDL}/${BUILD}/include-config-/SDL2"
   "${SDL}/${BUILD}/include/SDL2"
@@ -33,6 +34,7 @@ link_directories(
 set(SOURCES
   "src/tumanim.c"
   "src/tumanim-image.c"
+  "src/diagram/modelbase.c"
 )
 
 add_executable(tumanim

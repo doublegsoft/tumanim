@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim
+CMAKE_SOURCE_DIR = /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin
+CMAKE_BINARY_DIR = /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/EXPORT/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/christian/export/local/works/doublegsoft.io/animbase/03.Development/tumanim/build/darwin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ tumanim: cmake_check_build_system
 tumanim/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tumanim.dir/build.make CMakeFiles/tumanim.dir/build
 .PHONY : tumanim/fast
+
+src/diagram/modelbase.o: src/diagram/modelbase.c.o
+.PHONY : src/diagram/modelbase.o
+
+# target to build an object file
+src/diagram/modelbase.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tumanim.dir/build.make CMakeFiles/tumanim.dir/src/diagram/modelbase.c.o
+.PHONY : src/diagram/modelbase.c.o
+
+src/diagram/modelbase.i: src/diagram/modelbase.c.i
+.PHONY : src/diagram/modelbase.i
+
+# target to preprocess a source file
+src/diagram/modelbase.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tumanim.dir/build.make CMakeFiles/tumanim.dir/src/diagram/modelbase.c.i
+.PHONY : src/diagram/modelbase.c.i
+
+src/diagram/modelbase.s: src/diagram/modelbase.c.s
+.PHONY : src/diagram/modelbase.s
+
+# target to generate assembly for a file
+src/diagram/modelbase.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tumanim.dir/build.make CMakeFiles/tumanim.dir/src/diagram/modelbase.c.s
+.PHONY : src/diagram/modelbase.c.s
 
 src/tumanim-image.o: src/tumanim-image.c.o
 .PHONY : src/tumanim-image.o
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tumanim"
+	@echo "... src/diagram/modelbase.o"
+	@echo "... src/diagram/modelbase.i"
+	@echo "... src/diagram/modelbase.s"
 	@echo "... src/tumanim-image.o"
 	@echo "... src/tumanim-image.i"
 	@echo "... src/tumanim-image.s"
