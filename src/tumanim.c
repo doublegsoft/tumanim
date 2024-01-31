@@ -27,8 +27,8 @@ int main()
   SDL_Window* window = SDL_CreateWindow("Tumanim", 
                                         SDL_WINDOWPOS_UNDEFINED, 
                                         SDL_WINDOWPOS_UNDEFINED, 
-                                        FRAME_WIDTH, 
-                                        FRAME_HEIGHT, 
+                                        tuma_frame_width(), 
+                                        tuma_frame_height(),
                                         SDL_WINDOW_SHOWN);
                                       
   if (window == NULL) 

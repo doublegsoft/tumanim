@@ -24,6 +24,12 @@ extern "C"
 void
 tuma_render_and_run(SDL_Renderer* renderer);
 
+int
+tuma_frame_width(void);
+
+int
+tuma_frame_height(void);
+
 #ifdef __cplusplus
 }
 #endif

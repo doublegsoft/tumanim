@@ -12,10 +12,22 @@
 #include "tumanim-type.h"
 #include "tumanim-image.h"
 
+int
+tuma_frame_width(void)
+{
+  return FRAME_WIDTH;
+}
+
+int
+tuma_frame_height(void)
+{
+  return FRAME_HEIGHT;
+}
+
 void
 tuma_render_and_run(SDL_Renderer* renderer)
 {
-  SDL_Surface* background = SDL_CreateRGBSurface(0, FRAME_WIDTH, FRAME_HEIGHT, 32, 0, 0, 0, 0);
+  SDL_Surface* background = SDL_CreateRGBSurface(0, tuma_frame_width(), tuma_frame_height(), 32, 0, 0, 0, 0);
   SDL_Texture* tex_bg = SDL_CreateTextureFromSurface(renderer, background);
   
   // Create a texture from the image surface

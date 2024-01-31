@@ -30,8 +30,8 @@ tuma_image_load(const char* path)
   
   ret->x = 0;
   ret->y = 0;
-  ret->w = 0;
-  ret->h = 0;
+  ret->w = ret->orig_w;
+  ret->h = ret->orig_h;
   ret->tex = NULL;
   
   return ret;
@@ -53,6 +53,12 @@ tuma_image_resize(SDL_Renderer* renderer, tuma_image_t* image, int want_width, i
   targetDimensions.h = want_height;
   
   SDL_Surface* surface = image->surf;
+  
+  if (want_width == 0 || want_height == 0) 
+  {
+    image->tex = SDL_CreateTextureFromSurface(renderer, image->surf);
+    return;
+  }
 
   /*!
   ** create a 32 bits per pixel surface to Blit the image to first, 
@@ -61,13 +67,13 @@ tuma_image_resize(SDL_Renderer* renderer, tuma_image_t* image, int want_width, i
   ** @see https://stackoverflow.com/questions/33850453/sdl2-blit-scaled-from-a-palettized-8bpp-surface-gives-error-blit-combination/33944312
   */
   SDL_Surface* bpp_surface = SDL_CreateRGBSurface(surface->flags,
-                                                    sourceDimensions.w,
-                                                    sourceDimensions.h,
-                                                    32,
-                                                    surface->format->Rmask,
-                                                    surface->format->Gmask,
-                                                    surface->format->Bmask,
-                                                    surface->format->Amask);
+                                                  sourceDimensions.w,
+                                                  sourceDimensions.h,
+                                                  32,
+                                                  surface->format->Rmask,
+                                                  surface->format->Gmask,
+                                                  surface->format->Bmask,
+                                                  surface->format->Amask);
 
   if (SDL_BlitSurface(surface, NULL, bpp_surface, NULL) < 0) 
   {

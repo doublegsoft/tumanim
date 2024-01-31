@@ -33,8 +33,11 @@ link_directories(
 
 set(SOURCES
   "src/tumanim.c"
+  "src/tumanim-util.c"
   "src/tumanim-image.c"
-  "src/diagram/modelbase.c"
+  "src/tumanim-renderer.c"
+#  "src/diagram/modelbase.c"
+  "src/diagram/goalkeeper.c"
 )
 
 add_executable(tumanim
