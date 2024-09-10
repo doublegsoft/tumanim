@@ -36,8 +36,8 @@ set(SOURCES
   "src/tumanim-util.c"
   "src/tumanim-image.c"
   "src/tumanim-renderer.c"
-#  "src/diagram/modelbase.c"
-  "src/diagram/goalkeeper.c"
+  "src/diagram/modelbase.c"
+#  "src/diagram/goalkeeper.c"
 )
 
 add_executable(tumanim
